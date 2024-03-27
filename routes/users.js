@@ -8,10 +8,10 @@ const { User } = require("../db/model");
 router.post("/user", async (req, res) => {
   try {
     const newUser = await User.create({
-      firstName: "kirubel",
-      lastName: "jalleta",
+      firstName: req.body.firstname,
+      lastName: req.body.lastname,
     });
-    res.json(newUser);
+    res.status(200).json({ msg: "User Created Succsfuly", data: newUser });
   } catch (err) {
     res.status(500).json({ message: "Failed to create user.", error: err });
   }

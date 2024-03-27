@@ -3,7 +3,7 @@ const sequelize = require("./dbconfig");
 //const sequelize = new Sequelize("mysql::memory:");
 
 const User = sequelize.define(
-  "User",
+  "User",//the data base table name must also be "User"
   {
     // Model attributes are defined here
     firstName: {
