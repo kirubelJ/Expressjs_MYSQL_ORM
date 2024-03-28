@@ -3,7 +3,7 @@ const sequelize = require("./dbconfig");
 //const sequelize = new Sequelize("mysql::memory:");
 
 const User = sequelize.define(
-  "User",//the data base table name must also be "User"
+  "User", //the data base table name must also be "User"
   {
     // Model attributes are defined here
     firstName: {
@@ -17,9 +17,10 @@ const User = sequelize.define(
   },
   {
     // Other model options go here
-    // freezeTableName: true,
   }
 );
+
+// Your Other Model right here
 
 // `sequelize.define` also returns the model
 console.log(User === sequelize.models.User); // true
