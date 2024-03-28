@@ -1,7 +1,7 @@
 {
   "name": "mysql_orm",
   "version": "1.0.0",
-  "description": "test mysql orm with express js",
+  "description": "Express.js + Sequelize ORM Starter",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
